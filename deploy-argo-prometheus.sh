@@ -125,7 +125,7 @@ fi
 
 
 # create workflow-controller-metrics servicemonitor
-cat <<EOF >> ~/workflow-controller-metrics-servicemonitor.yaml
+cat <<EOF > ~/workflow-controller-metrics-servicemonitor.yaml
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

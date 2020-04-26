@@ -9,7 +9,7 @@ set -ex
 
 
 # create a PrometheusRule for workflow-controller-metrics service
-cat <<EOF >> ~/workflow-controller-rules.yaml
+cat <<EOF > ~/workflow-controller-rules.yaml
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
@@ -31,7 +31,7 @@ EOF
 
 
 # create a failing Argo Workflow so alert is fired
-cat <<EOF >> ~/workflow-fail.yaml
+cat <<EOF > ~/workflow-fail.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
