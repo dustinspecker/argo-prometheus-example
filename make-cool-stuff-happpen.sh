@@ -144,8 +144,3 @@ EOF
 
 ~/kubectl apply \
   --filename ~/workflow-controller-metrics-servicemonitor.yaml
-
-
-# view argo metrics on prometheus dashboard
-~/kubectl port-forward service/prometheus-k8s 9090 \
-  --namespace monitoring
