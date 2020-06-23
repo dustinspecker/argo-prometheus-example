@@ -28,7 +28,7 @@ if [ ! -f ~/kubectl ]; then
   chmod +x ~/kubectl
 fi
 
-~/kubectl version
+~/kubectl version --client
 
 
 # deploy argo
